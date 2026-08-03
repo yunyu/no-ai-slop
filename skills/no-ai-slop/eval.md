@@ -24,7 +24,7 @@ For detect requests, make sure the response names each pattern found with a quot
 ## Patterns to cut
 
 1. Are binary contrasts, negative listings, rhetorical setups, and throat-clearing openers removed?
-2. Are faux-insight setups, colon reveals, superficial analysis, fake-strong verbs, synonym cycling, dramatic fragments, and robotic rhythm fixed?
+2. Are faux-insight setups, colon reveals, superficial analysis, fake-strong verbs, synonym cycling, dramatic fragments, punch sentences, and robotic rhythm fixed?
 3. Are importance puffery and weasel attribution replaced with plain facts and named sources, or flagged for the user when no source exists?
 4. Are fake-profound kicker lines deleted instead of rewritten into better metaphors?
 5. Are summary-recap endings cut so the piece ends on a concrete point, takeaway, or next action?

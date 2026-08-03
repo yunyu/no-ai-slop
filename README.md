@@ -19,23 +19,24 @@ The patterns it detects include:
 | Synonym cycling | the agent, then the assistant, then the tool |
 | Negative listing | "Not a X. Not a Y. A Z." |
 | Dramatic fragmentation | "That's it. That's the whole thing." |
+| Punch sentences | "Nothing was lost." |
 
 It also enforces the fundamentals that make writing good: Lead with the point when it helps, use active voice, untangle hard-to-follow sentences, and prefer concrete numbers over abstractions.
 
-I use it during the middle 50% of my writing process to improve spelling, grammar, and clarity. I write or dictate the first draft myself, use AI to edit, then do the final line-by-line pass myself. [Read the full 25/50/25 process.](https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns)
+This is yunyu's fork of [petergyang/no-ai-slop](https://github.com/petergyang/no-ai-slop). It adds the punch-sentences pattern.
 
 ## Install
 
 List the skill available from this repository:
 
 ```sh
-npx skills add petergyang/no-ai-slop --list
+npx skills add yunyu/no-ai-slop --list
 ```
 
 Install it globally with the [Vercel Skills CLI](https://github.com/vercel-labs/skills):
 
 ```sh
-npx skills add petergyang/no-ai-slop --skill no-ai-slop --global --yes
+npx skills add yunyu/no-ai-slop --skill no-ai-slop --global --yes
 ```
 
 Confirm that it is installed:

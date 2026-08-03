@@ -71,6 +71,8 @@ Often-empty phrases: it's worth noting, it's important to note, at the end of th
 
 **Dramatic fragmentation.** "X. And Y. And Z." or "That's it. That's the whole thing." Use complete sentences.
 
+**Punch sentences.** Short standalone sentences used as dramatic beats that add no information: "You found a real bug." "Nothing was lost." "It worked." If the surrounding text already shows the fact, cut the sentence; otherwise fold it into a neighboring sentence. "Nothing was lost. The recordings and transcripts are intact" becomes "The recordings and transcripts are intact."
+
 **Robotic rhythm.** Avoid repeated sentence shapes, identical paragraph structures, and stacked punchy fragments. Vary the shape only when it helps the point.
 
 **Rhetorical setups.** "What if I told you...", "Think about it:", "Plot twist:", and self-answered "Question? Answer." pairs. Drop them and make the point.
