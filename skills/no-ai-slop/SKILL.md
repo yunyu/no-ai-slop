@@ -33,6 +33,8 @@ If the goal is unclear, ask what the reader should think, feel, or do after read
 - **Make every sentence earn its place.** Cut empty qualifiers and throat-clearing. Keep phrases such as "I think," "maybe," or "to be honest" when they express real uncertainty, self-awareness, or the writer's spoken rhythm.
 - **Untangle sentences without flattening the cadence.** Split sentences and paragraphs when they are genuinely hard to follow. Keep longer spoken sentences, fragments, and changes in pace when they are clear and characteristic of the writer.
 - **Be concrete and specific.** Abstraction is where writing goes to die. "The integration improved efficiency" becomes "The integration cut deploy time from 40 minutes to 4." Names, numbers, dates, mechanisms, and examples beat abstractions.
+- **Use the portability test.** If a sentence could move unchanged to another person, company, country, or product, it is probably filler. Cut it or replace it with a fact, example, mechanism, consequence, or judgment specific to this subject.
+- **Always show, don't tell the reader what to think.** Make facts, actions, examples, and consequences carry the emphasis. Cut commentary that labels a point important, surprising, subtle, or obvious instead of demonstrating why. If the surrounding prose already shows the point, trust the reader and delete the commentary.
 - **Protect the specific fact.** Don't smooth a useful detail into generic importance. "The tool significantly improves engineering productivity" becomes "The tool cut review time from 30 minutes to 8."
 - **Make verbs do the work.** Replace weak verb phrases with direct verbs. "Made a decision" becomes "decided." "Has the ability to" becomes "can."
 - **Know the job.** Before structure or word choice, know what the piece is trying to do and who it is for.
@@ -66,6 +68,8 @@ Often-empty phrases: it's worth noting, it's important to note, at the end of th
 **Stock-metaphor equations.** Short "X is the Y" sentences where Y is a fashionable diagnostic noun: the tell, the giveaway, the moat, the unlock, the superpower, the cheat code, the forcing function, the north star. They sound incisive while outsourcing the claim to a metaphor. State the literal claim: "Speed is their superpower" becomes "They ship in days; competitors take months." Same disease as fake-profound kickers, but these appear mid-paragraph dressed as analysis, not just as endings.
 
 **Anthropomorphized non-agents.** Inanimate things and abstractions doing human verbs, in any domain: the model *learns* or *wants*, the codebase *believes*, the market *hopes*, the concrete *sighs*, the data *tells a story*. Domain jargon normalizes some of these ("the model learns"), which is how they slip through. Recast with the real actors as subjects: "the roadmap wants to prioritize retention" becomes "the team prioritized retention."
+
+**Interpretive metadiscourse.** Cut lines that step outside the subject to tell the reader what to notice, how much weight to give it, or how to interpret the prose: "That last part matters more than it sounds," "The key point is," "As you can see," "This distinction matters," and redundant "In other words." If the point is clear, delete the aside. Otherwise, replace it with support or facts already in the content.
 
 **Weasel attribution.** "Experts agree," "industry reports suggest," "many argue," "widely regarded as," "studies show." Name the source or cut the claim. If the user has no source, ask instead of inventing one.
 

@@ -1,90 +1,92 @@
-# No AI slop
+# No AI Slop
 
-This open-source skill removes 20+ patterns of AI slop from your writing without flattening your personal voice. It can also detect slop without guessing whether AI wrote the text.
+Remove 20+ patterns of AI slop from your writing without flattening your personal voice.
 
-## What it catches
+https://github.com/user-attachments/assets/f3055450-78eb-4672-880a-88a4fa54bde9
 
-The patterns it detects include:
+## Problem
 
-| Pattern | Smells like |
-|---------|-------------|
-| Binary contrasts | "It's not X. It's Y." |
-| Throat-clearing openers | "Here's the thing..." |
-| Faux-insight setups | "What nobody tells you..." |
-| Colon reveals | "The best part: it learns." |
-| Superficial analysis | "...highlighting the team's commitment" |
-| Importance puffery | "marks a pivotal moment" |
-| Weasel attribution | "experts agree," "studies show" |
-| Fake-strong verbs | "serves as a centralized hub" |
-| Synonym cycling | the agent, then the assistant, then the tool |
-| Negative listing | "Not a X. Not a Y. A Z." |
-| Dramatic fragmentation | "That's it. That's the whole thing." |
-| Punch sentences | "Nothing was lost." |
+AI makes it easy to generate clean writing that all sounds the same. Even the best models keep producing lines like:
 
-It also enforces the fundamentals that make writing good: Lead with the point when it helps, use active voice, untangle hard-to-follow sentences, and prefer concrete numbers over abstractions.
+- “It’s not X. It’s Y.”
+- “What nobody tells you is…”
+- “The future isn’t coming. It’s already here.”
 
-This is yunyu's fork of [petergyang/no-ai-slop](https://github.com/petergyang/no-ai-slop). It adds the punch-sentences pattern.
+When you use AI to edit, it can also smooth away the vocabulary, cadence, humor, and imperfections that make the writing sound like you.
 
-## Install
+This is yunyu's fork of [petergyang/no-ai-slop](https://github.com/petergyang/no-ai-slop). It adds extra patterns: punch sentences, vague significance verbs, stock-metaphor equations, anthropomorphized non-agents, and colon-plus-list elaborations.
 
-List the skill available from this repository:
+## How to install No AI Slop
 
-```sh
-npx skills add yunyu/no-ai-slop --list
+The easiest way to install the skill is to paste this into ChatGPT, Claude Code, Codex, or your favorite coding agent:
+
+```text
+Install the /no-ai-slop skill globally from https://github.com/yunyu/no-ai-slop
 ```
 
-Install it globally with the [Vercel Skills CLI](https://github.com/vercel-labs/skills):
+You can also install it with `npx`:
 
 ```sh
 npx skills add yunyu/no-ai-slop --skill no-ai-slop --global --yes
 ```
 
-Confirm that it is installed:
+## How to use No AI Slop
 
-```sh
-npx skills list --global
+### Edit your writing
+
+```text
+/no-ai-slop (your writing)
 ```
 
-Update the installed skill later:
+The skill removes the AI slop patterns, preserves your personal voice, and lists what it changed.
 
-```sh
-npx skills update no-ai-slop --global --yes
+### Detect slop
+
+```text
+/no-ai-slop is this slop? (your writing)
 ```
 
-The repository also contains a skills-only plugin package for ChatGPT and Codex. Tagged releases attach a validated plugin ZIP, and the plugin is available in the public ChatGPT directory.
+The skill quotes every slop pattern it found without guessing whether AI wrote the text.
 
-## Use
+### Generate slop for fun
 
-**1. Edit a draft.** Paste it and invoke the skill:
-
-```
-/no-ai-slop
-
-[your draft]
+```text
+Draft an AI slop post about (topic)
 ```
 
-You get back the edited draft plus a short What changed section. The skill makes the minimum effective edit, then checks its own work against [eval.md](skills/no-ai-slop/eval.md).
+Use it to generate the most cringe AI slop possible as satire.
 
-**2. Detect slop.** Ask whether a piece reads as AI:
+## The slop that this skill catches
 
-```
-/no-ai-slop is this AI slop?
+No AI Slop checks for 20+ patterns, including:
 
-[the text]
-```
+1. **Binary contrasts.** “It’s not X. It’s Y.”
+2. **Throat-clearing openers.** “Here’s the thing,” “Let me be clear”
+3. **Faux-insight setups.** “What nobody tells you,” “The part everyone misses”
+4. **Colon reveals.** “The best part: it learns.”
+5. **Dramatic fragments.** “That’s it. That’s the whole thing.”
+6. **Superficial analysis.** “highlighting the team’s commitment to innovation”
+7. **Importance puffery.** “marks a pivotal moment,” “a testament to”
+8. **Weasel attribution.** “experts agree,” “studies show”
+9. **Synonym cycling.** “The agent handles your email. The assistant drafts replies.”
+10. **Fake-profound endings.** “The future isn’t coming. It’s already here.”
 
-You get every pattern it found each with the quoted line.
+It also checks the fundamentals: Lead with the point when that helps, use active voice, untangle hard-to-follow sentences, and prefer concrete details over abstractions.
 
-## Files
+## What’s inside
 
-1. `skills/no-ai-slop/SKILL.md`: The editing rules and workflow.
-2. `skills/no-ai-slop/eval.md`: Pass/fail checks the skill runs on its own edits.
-3. `.codex-plugin/plugin.json`: Metadata for the ChatGPT and Codex plugin.
-4. `scripts/build_plugin.py`: Builds and validates the plugin ZIP from the canonical skill files.
+- [`SKILL.md`](skills/no-ai-slop/SKILL.md) contains the editing rules and workflow.
+- [`eval.md`](skills/no-ai-slop/eval.md) contains the checks the skill runs on its work.
+- [`.codex-plugin/plugin.json`](.codex-plugin/plugin.json) contains the ChatGPT and Codex plugin metadata.
+- [`build_plugin.py`](scripts/build_plugin.py) builds and validates the plugin package.
 
-## Who made this
+No AI Slop is also available as a plugin in ChatGPT.
 
-This is one skill from my personal AI operating system. The full library, including my courses and workflows, lives at [Behind the Craft](https://behindthecraft.com).
+## Want more great AI skills?
+
+Check out [Behind the Craft](https://behindthecraft.com), my personal AI system with over a dozen other quality skills and courses.
+
+Subscribe to my [YouTube channel](https://www.youtube.com/@PeterYangYT?sub_confirmation=1) and [newsletter](https://creatoreconomy.so) for practical AI tutorials and interviews.
 
 ## License
 
