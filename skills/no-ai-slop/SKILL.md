@@ -41,7 +41,7 @@ If the goal is unclear, ask what the reader should think, feel, or do after read
 
 ## Words to cut
 
-Banned outright: delve, foster, leverage, utilize, facilitate, empower, streamline, robust, cutting-edge, paradigm shift, game changer, this is huge, this changes everything, tapestry, realm, beacon, multifaceted, meticulous, intricate, paramount, transformative, elevate, embark, supercharge, harness, ever-evolving.
+Banned outright: delve, foster, leverage, utilize, facilitate, empower, streamline, robust, cutting-edge, paradigm shift, game changer, this is huge, this changes everything, tapestry, realm, beacon, multifaceted, meticulous, intricate, paramount, transformative, elevate, embark, supercharge, harness, ever-evolving, moat, superpower, cheat code, secret sauce, north star, forcing function, force multiplier, unlock (as a noun).
 
 Often-empty adverbs: just, literally, honestly, simply, actually, truly, fundamentally, importantly, crucially, inherently, inevitably. Cut them when they add nothing. Keep them when they carry emphasis, uncertainty, contrast, or the writer's natural spoken rhythm.
 
@@ -53,13 +53,19 @@ Often-empty phrases: it's worth noting, it's important to note, at the end of th
 
 **Throat-clearing openers.** "Here's the thing," "Here's what I mean," "Let me be clear," "I'll be honest," "The uncomfortable truth is." Cut them and state the point.
 
-**Faux-insight setups.** "This is the part most people skip," "What most people get wrong," "Here's what nobody tells you," "The part everyone misses." These flatter the writer as the lone expert. Cut the setup and make the claim stand on its own. "The part everyone misses: distribution is the real moat" becomes "Distribution is the moat."
+**Faux-insight setups.** "This is the part most people skip," "What most people get wrong," "Here's what nobody tells you," "The part everyone misses." These flatter the writer as the lone expert. Cut the setup and make the claim stand on its own. "The part everyone misses: distribution is the real moat" becomes "Distribution is harder to copy than the product."
 
-**Colon reveals.** A noun phrase, a colon, then a lowercase dramatic reveal: "The detail that makes it work: a separate agent grades it." "The best part: it learns." Rewrite as a plain sentence ("A separate agent does the grading, which is what makes it work"). Use colons for lists, labels, and quotes, not fake drama. Prefer sentence case after a colon unless grammar, a proper noun, a title, or code requires otherwise.
+**Colon reveals.** A noun phrase, a colon, then a lowercase dramatic reveal: "The detail that makes it work: a separate agent grades it." "The best part: it learns." Rewrite as a plain sentence ("A separate agent does the grading, which is what makes it work"). Use colons for lists, labels, and quotes, not fake drama. Prefer sentence case after a colon unless grammar, a proper noun, a title, or code requires otherwise. The same applies to colon-plus-list elaborations: an abstract noun, a colon, then a parallel list — especially imperatives or a three-beat triple ("The strategy is simple: hire slowly, ship weekly, and talk to users every day"). The cadence reads as AI even when every word is clean. Fold the elaboration into the sentence or split it into two sentences; don't just soften the list.
 
 **Superficial analysis.** Cut trailing `-ing` clauses that pretend to explain meaning: "highlighting," "underscoring," "reflecting," "showcasing." "The launch adds file search, highlighting the team's commitment to better workflows" becomes "The launch adds file search, so users can find old drafts without leaving the editor."
 
 **Importance puffery.** "Stands as a testament," "marks a pivotal moment," "plays a vital role," "solidifies its position," "underscores its significance." State the fact and let the reader judge whether it matters. "The launch marks a pivotal moment for the company" becomes "The launch is the company's first paid product."
+
+**Vague significance verbs.** "X matters," "X matters more," "X is key," "X is critical," "what really counts is X." Importance asserted without content. Replace with the specific claim the writer is making: "onboarding matters more than pricing" becomes "fixing onboarding would retain more users than cutting the price."
+
+**Stock-metaphor equations.** Short "X is the Y" sentences where Y is a fashionable diagnostic noun: the tell, the giveaway, the moat, the unlock, the superpower, the cheat code, the forcing function, the north star. They sound incisive while outsourcing the claim to a metaphor. State the literal claim: "Speed is their superpower" becomes "They ship in days; competitors take months." Same disease as fake-profound kickers, but these appear mid-paragraph dressed as analysis, not just as endings.
+
+**Anthropomorphized non-agents.** Inanimate things and abstractions doing human verbs, in any domain: the model *learns* or *wants*, the codebase *believes*, the market *hopes*, the concrete *sighs*, the data *tells a story*. Domain jargon normalizes some of these ("the model learns"), which is how they slip through. Recast with the real actors as subjects: "the roadmap wants to prioritize retention" becomes "the team prioritized retention."
 
 **Weasel attribution.** "Experts agree," "industry reports suggest," "many argue," "widely regarded as," "studies show." Name the source or cut the claim. If the user has no source, ask instead of inventing one.
 
@@ -91,5 +97,6 @@ Often-empty phrases: it's worth noting, it's important to note, at the end of th
 2. Identify the core point and 3-5 voice signals to preserve, such as vocabulary, cadence, bluntness, humor, uncertainty, or digressions. Keep this note internal. If you cannot identify the core point, ask the user.
 3. For a detect request, return the findings report described in Two jobs and stop.
 4. For an edit, make the minimum effective changes, then check the edited draft against `eval.md` yourself.
-5. If any check fails, fix the draft and run the checks again.
-6. Output the full edited draft and a short **What changed** section.
+5. Re-scan every rewritten sentence against the pattern list before moving on: fixing one pattern routinely creates another (collapsing a colon list produces a run-on; a run-on fix produces an anthropomorphized subject). Prefer two short sentences over one clause-stacked sentence when folding material in.
+6. If any check fails, fix the draft and run the checks again.
+7. Output the full edited draft and a short **What changed** section.
